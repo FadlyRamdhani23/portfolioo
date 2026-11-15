@@ -72,6 +72,7 @@ export const projects = [
     coverImage: '/mr_putra/cover.png',
     coverImageAlt: 'Tampilan aplikasi UD MR Putra',
     images: [
+      { src: '/mr_putra/cover.png', alt: 'Cover aplikasi UD MR Putra' },
       { src: '/mr_putra/1.png', alt: 'Tampilan aplikasi UD MR Putra 1' },
       { src: '/mr_putra/2.png', alt: 'Tampilan aplikasi UD MR Putra 2' },
       { src: '/mr_putra/3.png', alt: 'Tampilan aplikasi UD MR Putra 3' },
