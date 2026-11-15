@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "@fontsource/bebas-neue";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/700.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --paper: #e6e6e6;
+  --panel: #cfcfcf;
+  --ink: #2b1b19;
+  --muted: #6b5f5c;
+  --accent: #2e7d5b; /* <- ganti di sini (mode terang) */
+}
+.dark {
+  --paper: #1d1716;
+  --panel: #2a2120;
+  --ink: #ece6e2;
+  --muted: #a39793;
+  --accent: #5ccb9a; /* <- ganti di sini (mode gelap) */
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --font-display: "Bebas Neue", Impact, sans-serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 4rem; }
+
+/* teks outline tanpa isi */
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--ink);
+}
+
+/* lingkaran "senter" yang mengikuti kursor */
+.spotlight {
+  -webkit-mask-image: radial-gradient(circle 230px at var(--mx, -999px) var(--my, -999px), #000 40%, transparent 100%);
+  mask-image: radial-gradient(circle 230px at var(--mx, -999px) var(--my, -999px), #000 40%, transparent 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
