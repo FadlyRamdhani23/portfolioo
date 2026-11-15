@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Menu, Moon, Sun, X } from 'lucide-react'
+import { Download, Menu, Moon, Sun, X } from 'lucide-react'
+import { profile } from '../data/profile'
 
 const links = [
   { id: 'home', label: 'Home' },
@@ -68,6 +69,15 @@ export default function Navbar({ theme, onToggle }) {
             </button>
 
             <a
+              href={profile.cv}
+              download
+              className="hidden items-center gap-2 rounded-lg bg-[#2b1b19] px-4 py-2 text-xs font-medium uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#49312d] sm:flex"
+            >
+              <Download size={14} />
+              Download CV
+            </a>
+
+            <a
               href="#kontak"
               className="hidden rounded-lg border border-[#2b1b19] px-4 py-2 text-xs font-medium uppercase tracking-[0.12em] transition-colors hover:bg-[#2b1b19] hover:text-white sm:block"
             >
@@ -100,6 +110,17 @@ export default function Navbar({ theme, onToggle }) {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={profile.cv}
+                download
+                onClick={() => setOpen(false)}
+                className="mt-1 flex items-center justify-center gap-2 rounded-lg bg-[#2b1b19] px-4 py-3 text-center text-sm font-medium text-white"
+              >
+                <Download size={16} />
+                Download CV
+              </a>
+            </li>
             <li>
               <a
                 href="#kontak"

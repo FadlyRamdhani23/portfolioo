@@ -59,6 +59,8 @@ export const projects = [
     badge: 'Jurnal Sinta 5',
     title: 'Cutman: Reservasi Barbershop',
     desc: 'Sistem reservasi barbershop berbasis web dan desktop offline (Java NetBeans) dengan fitur kustomisasi gaya rambut sesuai bentuk kepala pelanggan untuk efisiensi antrean.',
+    coverImage: '/cutman/cover.png',
+    coverImageAlt: 'Tampilan aplikasi Cutman',
     tags: ['Laravel', 'PHP', 'MySQL'],
     link: '', // isi dengan link jurnal Sinta 5 yang benar
     linkLabel: 'Baca Jurnal',
@@ -133,6 +135,23 @@ export const projects = [
     tags: ['Docker', 'Docker Compose'],
     link: '',
     linkLabel: '',
+  },
+  {
+    category: 'game',
+    icon: 'game',
+    badge: 'Action Shooter · Virtual Reality',
+    title: 'THE LABIRINTH',
+    desc: 'Game bergenre Action Shooter berbasis Virtual Reality (VR) yang dirancang untuk perangkat seperti Oculus Quest 2, serta tersedia untuk platform Windows dan Android. Dikembangkan menggunakan Unity dan menyediakan versi Android (APK), Windows VR (EXE), serta demo desktop.',
+    coverImage: '/thelabirinty/covergame.jpeg',
+    coverImageAlt: 'Cover game THE LABIRINTH',
+    images: [
+      { src: '/thelabirinty/1.png', alt: 'Tampilan THE LABIRINTH 1' },
+      { src: '/thelabirinty/2.png', alt: 'Tampilan THE LABIRINTH 2' },
+      { src: '/thelabirinty/3.png', alt: 'Tampilan THE LABIRINTH 3' },
+    ],
+    tags: ['Unity', 'Virtual Reality', 'Oculus Quest 2', 'Windows', 'Android', 'APK', 'EXE'],
+    link: 'https://timbolang.itch.io/the-labyrinth',
+    linkLabel: 'Mainkan di itch.io',
   },
 ]
 

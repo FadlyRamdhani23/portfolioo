@@ -3,7 +3,7 @@ export const profile = {
   intro:
     'Lulusan Teknik Informatika Telkom University. Saya membangun API dan basis data, dan skripsi saya meneliti optimasi portofolio saham LQ45 dengan machine learning (terbit di jurnal Sinta 2).',
   photo: '/foto.png',
-  cv: '/cv.pdf',
+  cv: '/cv/cv_fadly.pdf',
 }
 
 export const contact = {

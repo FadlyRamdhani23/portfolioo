@@ -12,6 +12,7 @@ import { timeline } from '../data/about'
 const iconMap = {
   chart: TrendingUp,
   dashboard: LayoutDashboard,
+  game: Gamepad2,
   scissors: Scissors,
   truck: Truck,
   map: MapPin,
